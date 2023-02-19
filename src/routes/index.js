@@ -4,7 +4,6 @@ const controller = require("../controller/file.controller");
 
 let routes = (app) => {
   router.get("/ping", controller.ping)
-  router.get("/pings", controller.ping)
   router.post("/upload", controller.upload);
   router.get("/files", controller.getListFiles);
   router.get("/files/:name", controller.download);
